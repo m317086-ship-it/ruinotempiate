@@ -1,0 +1,152 @@
+/* Globel */
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+body{
+	/* 字型 */
+	font-family: palatino;
+	/* 行高 */
+	line-height: 1.6;
+	background: #b9d8eb;
+	background: #b9d8eb;
+background: linear-gradient(77deg,rgba(185, 216, 235, 0.84) 0%, rgba(172, 189, 250, 0.75) 50%, rgba(255, 222, 244, 0.75) 100%);
+}
+ul{
+	list-style: none;
+}
+
+/* 最外層 */
+.wrapper{
+	width: 1400px;
+	height: 787px;
+	background-color: #255359;
+	/* 元素定位 絕對定位 */
+	position: relative;
+	/* 置中 */
+	margin: 50px auto;
+	/* 背景圖 */
+	background-image:url('../image/lo.gif') ;
+	/* 不重複背景 */
+	background-repeat: no-repeat;
+	/* 背景尺寸 */
+	background-size: cover;
+	box-shadow: 5px 15px 30px rgba(30, 20, 70, 1.0) ;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+/* A主選單 */
+.nav{
+	/* 浮動 */
+	float: left;
+	/* 內距 */
+	padding: 30px 0px 0px 15px;
+}
+.nav li{
+	/* 浮動 */
+	float: left;
+	/* 左外距 */
+	margin-left:50px ;
+}
+.nav a{
+	/* 清除文字裝飾 */
+	text-decoration: none;
+	color: #1E88A8 ;
+	font-size: 20px;
+	/* 字型 */
+	font-family: Georgia;
+	/* 文字粗細 */
+	font-weight: 600;
+	text-decoration: underline transparent;
+	text-underline-offset: 5px;
+	text-decoration-thickness:3px;
+	transition: text-decoration-color 0.3s;
+}
+.nav a:hover{
+	color: #F8C3CD;
+	transition: text-decoration-color 0.3s;
+	text-decoration-color:#FEDFE1 ;
+}
+
+/* B主內容 */
+.container{
+	width: 500px;
+	/* 浮動 */
+	float: left;
+	/* 清除浮動 */
+	clear: both;
+	/* 內距 */
+	padding: 20px 0px 0px 60px;
+}
+.container h1{
+	font-size: 60px;
+	color: #006284 ;
+	font-family: Georgia;
+	font-weight: 600;
+
+	animation-name: mayuyu;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes mayuyu {
+	0%,100%{ color: #006284; 
+		transform: translateY(0px)rotate(-1deg);}
+
+	50%{color: #DC9FB4;
+		transform: translateY(-10px)rotate(1deg);}
+	
+}
+.container h2{
+	font-size: 40px;
+	color: #006284 ;
+	font-family:Georgia ;
+	margin-top:-30px ;
+}
+.container p{
+	color:#3a8fb7 ;
+	font-family:Georgia ;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+.container a{
+	display: inline-block;
+	text-decoration: none;
+	background: transparent;
+	color: #58b2dc;
+	border:2px solid #58b2dc ;
+	padding: 9px 25px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	transition:.5s ;
+	font-size: 18px;
+	font-weight: 600;
+}
+.container a:hover{
+	background-color:#7db9de;
+	color:#005caf;
+	border-radius: 50px;
+	transform: translateY(-5px);
+}
+/* c社群連結 */
+.social-media{
+	float: left;
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+}
+
+.social-media li{
+	float: right;
+	margin-right: 40px;
+}
+.social-media a{
+	display: inline-block;
+	color:#7db9de ;
+	transition: 0.3s ease;
+}
+.social-media a:hover{
+	color:#F8C3CD ;
+	transform: scale(1.5);
+}
